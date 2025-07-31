@@ -1,0 +1,206 @@
+
+.carrossel-container {
+    margin-top: 65px;
+    width: 100%;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+#carrossel img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.carrossel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.carrossel .slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.carrossel .slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+h1{
+    font-size: 1.3em;
+    margin-bottom: 0px;
+}
+
+h1#servico{
+    text-align: center;
+    font-weight: bold;
+}
+
+h1#noticia{
+    text-align: center;
+    font-weight: bold;
+}
+
+.cards-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 20px;
+    padding: 20px 100px;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+}
+
+.card {
+    width: 24vw;        /* ajuste aqui a largura desejada */
+    height: 20vh;       /* ajuste aqui a altura desejada */
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+    transition: transform 0.3s;
+    border: solid 1px rgb(31, 74, 106);
+    }
+
+
+.card:hover {
+    transform: translateY(-1px);
+    color: white;
+    background-color: rgb(41, 99, 143);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: black;
+    text-align: center;
+}
+
+.card p {
+    font-size: 16px;
+    color: black;
+}
+
+.card-icon {
+    font-size: 50px;
+    text-align: center;
+    color: rgb(31, 74, 106); /* mesma cor do menu */
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 2vh;
+}
+
+.card h3:hover {
+    color: white;
+    background-color: rgb(41, 99, 143);
+}
+
+.card-icon:hover {
+    color: white;
+    background-color: rgb(41, 99, 143);
+}
+
+.news-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 20px 20px;
+}
+
+.news-card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.news-image {
+    overflow: hidden;
+    height: 200px;
+}
+
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.news-image:hover img {
+    transform: scale(1.05); /* zoom leve */
+}
+
+.news-description {
+    padding: 15px;
+    font-size: 15px;
+    color: #333;
+}
+
+.clock-icon {
+    font-size: 16px;
+    vertical-align: middle;
+    color: #555;
+    margin-right: 5px;
+    color: rgb(31, 74, 106);
+}
+
+#amarela {
+    display: flex;
+    align-items: flex-start; /* Alinha topo com topo */
+    justify-content: space-between;
+    padding: 30px;
+    background-color: rgb(31, 74, 106); /* cor amarelada clara, pode ajustar */
+    gap: 50px; /* espaçamento entre a imagem e o conteúdo */
+    flex-wrap: wrap; /* para ficar responsivo em telas pequenas */
+    margin-top: 10vh;
+    
+}
+
+#image img {
+    width: 40vw;
+    height: 65vh;
+    padding-left: 3vw;
+}
+
+#conteudo {
+    flex: 1;
+    min-width: 300px;
+    color: white;
+    padding: 2vw;
+    padding-right: 5vw;
+}
+
+#conteudo h1 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#conteudo p {
+    color: white;
+    line-height: 1.6;
+    text-align: justify;
+    font-size: .8em;
+}
+
+
+section#gps { /* container com a imagem da comissão instaladora */
+    height: 90vh;
+    width: 100%;
+    background: black url(/images/comissao-instaladora.jpg) left top no-repeat;
+    background-size: cover;
+}
