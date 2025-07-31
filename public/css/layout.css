@@ -1,0 +1,182 @@
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: rgb(31, 74, 106);
+    height: 12vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.74);
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 30px;
+}
+
+.menu > li {
+    position: relative;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.menu > li > a, .menu > li {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.menu > li > a, .logo{
+    height: 100%;
+    width: 9vw;
+    margin-left: -4vw;
+    padding-left: 1vw;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: rgb(31, 74, 106);
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    background-color: rgb(31, 74, 106);
+}
+
+/* Ativo por clique (classe adicionada via JS) */
+.has-submenu.active .submenu {
+    display: block;
+}
+.menu > li > a, .menu > li {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: rgb(31, 74, 106);
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    background-color: rgb(31, 74, 106);
+}
+
+/* Ativo por clique (classe adicionada via JS) */
+.has-submenu.active .submenu {
+    display: block;
+}
+
+.main-content {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+a#area_restrita{
+    text-decoration: none;
+    background-color: white;
+    font-size: 1.1rem;
+    color: rgb(31, 74, 106);
+    border-radius: 4px;
+    margin-left: 70px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.401);
+    padding: 9px 26px;
+}
+
+
+.footer {
+    background-color: #000000d6;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 20px;
+    flex-wrap: wrap;
+    margin-top: -1vh;
+}
+
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(31, 74, 106);
+    margin-bottom: 8vh;
+}
+
+.material-icons {
+    vertical-align: middle;
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+a#link_footer{
+    text-decoration: none;
+    color: white;
+}
+
+p#sinza{
+    color: darkgrey;
+}
